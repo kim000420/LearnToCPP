@@ -73,6 +73,12 @@ SNode* CreateNode(SNode* pNode, int data)
 
 	pTemp = new SNode();
 	pTemp->nData = data;
+	pTemp->pNext = NULL;
+	
+	if (pNode != NULL)
+	{
+		pNode->pNext = pTemp;
+	}
 
 	return  pTemp;
 }
@@ -80,6 +86,13 @@ SNode* CreateNode(SNode* pNode, int data)
 SNode* FindNodeData(SNode* pStart, int data)
 {
 	SNode* pNode = pStart;
+	
+	// pNode의 nData가 data와 같을때까지 반복
+	while (pNode->nData != data)
+	{
+		// pNode에 pNext주소 복사
+		pNode = pNode->pNext;
+	}
 
 	return pNode;
 }
@@ -91,6 +104,17 @@ SNode* InsertNodeData(SNode* pStart, int data, int insert)
 
 	pNode = FindNodeData(pStart, data);
 
+	// 새노드 만들기
+	// 새노드 데이터에 insert값 넣기
+	// pInsert에 새노드 주소 넣기
+	// pInsert->pNext에 pNode->pNext를 복사
+	// pNode->pNext에 pInsert를 복사
+
+	pInsert = new SNode;
+	pInsert->nData = insert;
+	pInsert->pNext = pNode->pNext;
+	pNode->pNext = pInsert;
+		 
 	return pNode;
 }
 
@@ -121,6 +145,10 @@ void DeleteLinkedList(SNode* pStart)
 {
 	SNode* pNode = pStart;
 	SNode* pDel = NULL;
+
+
+	delete pDel;
+	pDel = NULL;
 }
 
 void InputAdd()

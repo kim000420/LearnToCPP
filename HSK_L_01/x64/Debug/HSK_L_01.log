@@ -1,4 +1,4 @@
-﻿  소스.cpp
-C:\Users\Administrator\Documents\GitHub\HSK\LearnToCPP\HSK_L_01\소스.cpp(35,1): warning C4326: 'main'의 반환 형식이 'int'이어야 하는데 'void'입니다.
-C:\Users\Administrator\Documents\GitHub\HSK\LearnToCPP\HSK_L_01\소스.cpp(140,3): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+﻿  SingleLinkedList.cpp
+C:\Users\Administrator\Documents\GitHub\HSK\LearnToCPP\HSK_L_01\SingleLinkedList.cpp(35,1): warning C4326: 'main'의 반환 형식이 'int'이어야 하는데 'void'입니다.
+C:\Users\Administrator\Documents\GitHub\HSK\LearnToCPP\HSK_L_01\SingleLinkedList.cpp(164,3): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
   HSK_L_01.vcxproj -> C:\Users\Administrator\Documents\GitHub\HSK\LearnToCPP\HSK_L_01\x64\Debug\HSK_L_01.exe

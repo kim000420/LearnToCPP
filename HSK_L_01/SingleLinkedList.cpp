@@ -21,7 +21,7 @@ SNode* FindNodeData(SNode* pStart, int data); //해당 데이터를 가진 노드를 찾는다
 SNode* InsertNodeData(SNode* pStart, int data, int insert); //해당 데이터를 가진 노드 뒤에 노드를 추가한다.
 void DeleteNodeData(SNode* pStart, int del); //해당데이터를 가진 노드를 삭제한다.
 void PrintLinkedList(SNode* pStart); //노드를 순회하며 끝날때까지 출력한다.
-void DeleteLinkedList(SNode* pStart); //노드를 순회하며 모든데이터를 삭제한다.
+void DeleteLinkedList(SNode** pStart); //노드를 순회하며 모든데이터를 삭제한다.
 void ReverseLinkedList(SNode* pStart); //
 
 //연결리스트 동적으로 입력받기.(동적할당 설명용)
@@ -62,7 +62,9 @@ void main()
 
 	PrintLinkedList(pBegin);
 
-	DeleteLinkedList(pBegin); //모든노드삭제 - 이 함수를 호출하지않을시 메모리가 누수됨.
+	DeleteLinkedList(&pBegin); //모든노드삭제 - 이 함수를 호출하지않을시 메모리가 누수됨.
+
+	if (pBegin == NULL) printf("비긴은 널값임");
 }
 
 //여기서 부터 기능을 구현한다.
@@ -153,9 +155,9 @@ void PrintLinkedList(SNode* pStart)
 	printf("\n");
 }
 
-void DeleteLinkedList(SNode* pStart)
+void DeleteLinkedList(SNode** pStart)
 {
-	SNode* pNode = pStart;
+	SNode* pNode = *pStart;
 	SNode* pDel = NULL;
 
 	// 노드 주소가 없어질때(NULL)까지 반복
@@ -166,12 +168,25 @@ void DeleteLinkedList(SNode* pStart)
 		//링크된 주소를 현재 주소로 변경
 		pNode = pNode->pNext;
 
-		printf("%d 삭제",pDel->nData);
+		printf("%d 삭제\n",pDel->nData);
 
 		// 저장된 주소 삭제
 		delete pDel;
 		pDel = NULL;
 	}
+
+	//*pStart -> 0x30 = 0x01
+	//pStart = 0x30
+	*pStart = NULL;
+}
+
+void OutputQueue() //선입선출
+{
+	//리스트 만들기
+}
+void OutputStack() //선입후출
+{
+
 }
 
 void InputAdd()
@@ -202,5 +217,5 @@ void InputAdd()
 		PrintLinkedList(pStart);
 	}
 
-	DeleteLinkedList(pStart); //모든노드삭제 - 이 함수를 호출하지않을시 메모리가 누수됨.
+	DeleteLinkedList(&pStart); //모든노드삭제 - 이 함수를 호출하지않을시 메모리가 누수됨.
 }

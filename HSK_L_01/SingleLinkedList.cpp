@@ -123,7 +123,19 @@ void DeleteNodeData(SNode* pStart, int del)
 	SNode* pPre = NULL;
 	SNode* pNode = pStart;
 
+	while (pNode->nData != del)
+	{
+		// pPre에 pNode의 주소를 저장
+		pPre = pNode;
+		// pNode에 pNext주소 복사
+		pNode = pNode->pNext;
+	}
 
+	pPre->pNext = pNode->pNext;
+
+	delete pNode;
+	
+	printf("%d 데이터를 가진 노드 삭제 완료\n",del); 
 }
 
 void PrintLinkedList(SNode* pStart)
@@ -135,7 +147,7 @@ void PrintLinkedList(SNode* pStart)
 		printf("%d", pNode->nData);
 		pNode = pNode->pNext;
 
-		if (pNode != NULL)
+		if (pNode != NULL) 
 			printf(",");
 	}
 	printf("\n");
@@ -146,9 +158,20 @@ void DeleteLinkedList(SNode* pStart)
 	SNode* pNode = pStart;
 	SNode* pDel = NULL;
 
+	// 노드 주소가 없어질때(NULL)까지 반복
+	while (pNode != NULL)
+	{
+		//현재 주소 저장
+		pDel = pNode;
+		//링크된 주소를 현재 주소로 변경
+		pNode = pNode->pNext;
 
-	delete pDel;
-	pDel = NULL;
+		printf("%d 삭제",pDel->nData);
+
+		// 저장된 주소 삭제
+		delete pDel;
+		pDel = NULL;
+	}
 }
 
 void InputAdd()

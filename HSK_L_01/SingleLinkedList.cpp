@@ -39,6 +39,7 @@ void main()
 	SNode* pBegin = NULL;
 	SNode* pEnd = NULL;
 
+
 	//노드 추가 테스트
 	pEnd = CreateNode(pEnd, 10);
 	pBegin = pEnd; //마지막 노드를 알아야 검색이 가능하므로 저장해둔다.
@@ -172,7 +173,7 @@ void DeleteLinkedList(SNode** pStart)
 
 		// 저장된 주소 삭제
 		delete pDel;
-		pDel = NULL;
+		pDel = NULL;				   
 	}
 
 	//*pStart -> 0x30 = 0x01
@@ -180,11 +181,40 @@ void DeleteLinkedList(SNode** pStart)
 	*pStart = NULL;
 }
 
-void OutputQueue() //선입선출
+SNode* CreateQueueNode(SNode* pNode, int data) //선입선출
 {
-	//리스트 만들기
+	SNode* pTemp = NULL;
+
+	pTemp = new SNode();
+	pTemp->nData = data;
+	pTemp->pNext = NULL;
+
+	if (pNode != NULL)
+	{
+		pNode->pNext = pTemp;
+	}
+
+	return  pTemp;
 }
-void OutputStack() //선입후출
+
+void DeleteQueueNode(SNode** pQueueStart)
+{
+	// pNode에 Begin의 값 전달
+	if (*pQueueStart)
+	{
+		SNode* pNode = *pQueueStart;
+		// pBegin의 주소지를, 주소의 pNext로 바꿈
+		*pQueueStart = pNode->pNext;
+		// 로그 - 과정
+		printf("%d 삭제됨: ", pNode->nData);
+		// pNode 삭제
+		delete pNode;
+		pNode = NULL;
+	}
+	else printf("에러: pBegin == NULL");
+}
+
+void CreateStackNode() //선입후출
 {
 
 }

@@ -66,6 +66,40 @@ void main()
 	DeleteLinkedList(&pBegin); //모든노드삭제 - 이 함수를 호출하지않을시 메모리가 누수됨.
 
 	if (pBegin == NULL) printf("비긴은 널값임");
+
+	//큐 테스트
+	SNode* pQueueBegin = NULL;
+	SNode* pQueueEnd = NULL;
+
+	pQueueEnd = CreateQueueNode(pQueueEnd, 10);
+	pQueueBegin = pQueueEnd;
+
+	pQueueEnd = CreateQueueNode(pQueueEnd, 20);
+	pQueueEnd = CreateQueueNode(pQueueEnd, 30);
+	pQueueEnd = CreateQueueNode(pQueueEnd, 40);
+	pQueueEnd = CreateQueueNode(pQueueEnd, 50);
+	pQueueEnd = CreateQueueNode(pQueueEnd, 60);
+
+	PrintLinkedList(pQueueBegin);
+
+	DeleteQueueNode(&pQueueBegin);
+	PrintLinkedList(pQueueBegin);
+	DeleteQueueNode(&pQueueBegin);
+	PrintLinkedList(pQueueBegin);
+	DeleteQueueNode(&pQueueBegin);
+	PrintLinkedList(pQueueBegin);
+	DeleteQueueNode(&pQueueBegin);
+	PrintLinkedList(pQueueBegin);
+	DeleteQueueNode(&pQueueBegin);
+	PrintLinkedList(pQueueBegin);
+	DeleteQueueNode(&pQueueBegin);
+	PrintLinkedList(pQueueBegin);
+	DeleteQueueNode(&pQueueBegin);
+	PrintLinkedList(pQueueBegin);
+
+	//스택 테스트
+	SNode* pStackBegin = NULL;
+	SNode* pStackEnd = NULL;
 }
 
 //여기서 부터 기능을 구현한다.
@@ -180,7 +214,10 @@ void DeleteLinkedList(SNode** pStart)
 	//pStart = 0x30
 	*pStart = NULL;
 }
-
+// 사용법
+// ex) pEnd = CreateQueueNode(pBegin, 10);
+// 생성후 1회 필수
+// ex) pBegin = pEnd
 SNode* CreateQueueNode(SNode* pNode, int data) //선입선출
 {
 	SNode* pTemp = NULL;
@@ -197,7 +234,7 @@ SNode* CreateQueueNode(SNode* pNode, int data) //선입선출
 	return  pTemp;
 }
 
-void DeleteQueueNode(SNode** pQueueStart)
+void DeleteQueueNode(SNode** pQueueStart) 
 {
 	// pNode에 Begin의 값 전달
 	if (*pQueueStart)
@@ -214,9 +251,57 @@ void DeleteQueueNode(SNode** pQueueStart)
 	else printf("에러: pBegin == NULL");
 }
 
-void CreateStackNode() //선입후출
+// 사용법
+// ex) pEnd = CreateStackNode(pBegin, 10);
+// 생성후 1회 필수
+// ex) pBegin = pEnd
+SNode* CreateStackNode(SNode* pNode, int data) //선입후출
 {
+	SNode* pTemp = NULL;
 
+	pTemp = new SNode();
+	pTemp->nData = data;
+	pTemp->pNext = NULL;
+
+	if (pNode != NULL)
+	{
+		pNode->pNext = pTemp;
+	}
+
+	return  pTemp;
+}
+
+void DeleteStackNode(SNode** pStackEnd)
+{
+	if (*pStackEnd)
+	{
+		// 마지막 노드를 찾기
+		// 마지막노드의 이전 노드를 찾기
+		// 
+		// pPre, pTemp 생성
+		SNode* pPre = NULL;
+		SNode* pTemp = *pStackEnd;
+
+		// pTemp 가 NULL이되면 반복중단
+		// pPre에 pTemp저장
+		// pTemp= pTemp->pNext 저장
+		while (pTemp)
+		{
+			pPre = pTemp;
+			pTemp = pTemp->pNext;
+		}
+
+		// pPre->Next = NULL 다음에도 찾을수있도록 널값채우기
+		// pStackEnd를 pPre의  주소로변경
+		pPre->pNext = NULL;
+		*pStackEnd = pPre;
+		
+		// pTemp삭제
+		delete pTemp;
+		pTemp = NULL;
+
+	}
+	else printf("에러: pStackEnd == NULL");
 }
 
 void InputAdd()

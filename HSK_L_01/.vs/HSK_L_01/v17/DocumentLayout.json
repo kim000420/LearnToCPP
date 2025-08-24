@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "D:\\Git\\LearnToCPP\\HSK_L_01\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{FCA29237-543D-452B-8113-46EF843169CF}|HSK_L_01.vcxproj|D:\\Git\\LearnToCPP\\HSK_L_01\\BinaryTree.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{FCA29237-543D-452B-8113-46EF843169CF}|HSK_L_01.vcxproj|solutionrelative:BinaryTree.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{FCA29237-543D-452B-8113-46EF843169CF}|HSK_L_01.vcxproj|D:\\Git\\LearnToCPP\\HSK_L_01\\SingleLinkedList.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{FCA29237-543D-452B-8113-46EF843169CF}|HSK_L_01.vcxproj|solutionrelative:SingleLinkedList.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
@@ -26,11 +30,24 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
+              "Title": "BinaryTree.cpp",
+              "DocumentMoniker": "D:\\Git\\LearnToCPP\\HSK_L_01\\BinaryTree.cpp",
+              "RelativeDocumentMoniker": "BinaryTree.cpp",
+              "ToolTip": "D:\\Git\\LearnToCPP\\HSK_L_01\\BinaryTree.cpp",
+              "RelativeToolTip": "BinaryTree.cpp",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAACoAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-08-24T07:27:06.511Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "InsertSort.cpp",
               "DocumentMoniker": "D:\\Git\\LearnToCPP\\HSK_L_01\\InsertSort.cpp",
               "RelativeDocumentMoniker": "InsertSort.cpp",
@@ -42,20 +59,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "SingleLinkedList.cpp",
               "DocumentMoniker": "D:\\Git\\LearnToCPP\\HSK_L_01\\SingleLinkedList.cpp",
               "RelativeDocumentMoniker": "SingleLinkedList.cpp",
               "ToolTip": "D:\\Git\\LearnToCPP\\HSK_L_01\\SingleLinkedList.cpp",
               "RelativeToolTip": "SingleLinkedList.cpp",
-              "ViewState": "AgIAABYAAAAAAAAAAADwvy0AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAABYAAAAAAAAAAADwv3UAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-08-21T10:18:52.833Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "Array.cpp",
               "DocumentMoniker": "D:\\Git\\LearnToCPP\\HSK_L_01\\Array.cpp",
               "RelativeDocumentMoniker": "Array.cpp",
@@ -67,7 +84,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "Swap.cpp",
               "DocumentMoniker": "D:\\Git\\LearnToCPP\\HSK_L_01\\Swap.cpp",
               "RelativeDocumentMoniker": "Swap.cpp",

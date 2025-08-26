@@ -23,6 +23,7 @@ using namespace std;
 //3.배열의 크기를 런타임중에 변경가능하다.
 void VectorMain()
 {
+	cout << "[VectorMain Start]" << endl;
 	vector<int> container(1);//컨테이너생성시 크기를 지정가능하다.
 	container[0] = 10;
 	cout << "Print:";
@@ -45,6 +46,8 @@ void VectorMain()
 	for (it = container.begin(); it != container.end(); it++)
 		cout << "[" << &*it << "]" << *it << ",";
 	cout << endl;
+
+	cout << "[VectorMain End]" << endl << endl;
 }
 //연결리스트
 //1.데이터는 순차접근만 가능하다.(랜덤x)
@@ -52,32 +55,198 @@ void VectorMain()
 //3.연결리스트의 종류: 단일, 환형, 이중 stl의 리스트는 어디에 해당되는가?
 void ListMain()
 {
+	cout << "[ListMain Start]" << endl;
 
+	list<int> list(5);
+	list.push_back(20);
+	cout << "Print PushBack 20" << endl;
+	for (int i : list)
+	{
+		cout << "[" << i << "]";
+	}
+	cout << endl;
+	
+	list.push_front(10);
+	cout << "Print PushFront 10" << endl;
+	for (int i : list)
+	{
+		cout << "[" << i << "]";
+	}
+	cout << endl;
+
+	list.sort();
+	cout << "Print Sort" << endl;
+	for (int i : list)
+	{
+		cout << "[" << i << "]";
+	}
+	cout << endl;
+
+	list.reverse();
+	cout << "Print reverse" << endl;
+	for (int i : list)
+	{
+		cout << "[" << i << "]";
+	}
+	cout << endl;
+
+	cout << "[ListMain End]" << endl << endl;
 }
 //데크: 앞뒤로 자료를 추가/삭제가능, 랜덤접근가능.
 void DequeMain()
 {
+	cout << "[DequeMain Start]" << endl;
+	deque<int> dq(4);
 
+	cout << "Print:";
+	for (int i = 0; i < dq.size(); i++)
+		cout << "[" << i << "]" << dq[i] << ",";
+	cout << endl;
+
+	//뒤에 자료 추가
+	dq.push_back(10);
+
+		cout << "PushBack:";
+	for (int i = 0; i < dq.size(); i++)
+		cout << "[" << i << "]" << dq[i] << ",";
+	cout << endl;
+	//앞에 자료 추가
+	dq.push_front(10);
+
+	cout << "PushFront:";
+	for (int i = 0; i < dq.size(); i++)
+		cout << "[" << i << "]" << dq[i] << ",";
+	cout << endl;
+	//뒤의 자료 삭제
+	dq.pop_back();
+
+	cout << "PushFront:";
+	for (int i = 0; i < dq.size(); i++)
+		cout << "[" << i << "]" << dq[i] << ",";
+	cout << endl;
+	//앞의 자료 삭제
+	dq.pop_front();
+
+	cout << "PushFront:";
+	for (int i = 0; i < dq.size(); i++)
+		cout << "[" << i << "]" << dq[i] << ",";
+	cout << endl;
+	//랜덤 접근
+
+	dq.push_front(9);
+	dq.push_front(8);
+	dq.push_front(7);
+	dq.push_front(6);
+	dq.push_front(5);
+	dq.push_front(4);
+	dq.push_front(3);
+	dq.push_front(2);
+	dq.push_front(1);
+	dq.push_front(0);
+
+	cout << "RandomAccess:";
+	cout << "[" << 3 << "]" << dq[3];
+	cout << endl;
+
+	cout << "[Deque End]" << endl << endl;
 }
 //스택: 뒤에서 추가되고 뒤에서 꺼냄.
 //재귀함수에서 이전 함수를 호출할때마다 스택에 쌓임.
 //문자열뒤집기 -> 문자배열 -> apple -> elppa
 void StackMain()
 {
+	cout << "[Stack Start]" << endl;
+	stack<int> stack;
 
+	stack.push(10);
+	cout << "Print Top: " << stack.top() << endl;
+	cout << "Print Size: " << stack.size() << endl;
+	stack.push(20);
+	cout << "Print Top: " << stack.top() << endl;
+	cout << "Print Size: " << stack.size() << endl;
+	stack.push(30);
+	cout << "Print Top: " << stack.top() << endl;
+	cout << "Print Size: " << stack.size() << endl;
+	stack.push(40);
+	cout << "Print Top: " << stack.top() << endl;
+	cout << "Print Size: " << stack.size() << endl << endl;
+
+	stack.pop();
+	cout << "Print Top: " << stack.top() << endl;
+	cout << "Print Size: " << stack.size() << endl;
+	stack.pop();
+	cout << "Print Top: " << stack.top()<< endl;
+	cout << "Print Size: " << stack.size() << endl;
+	stack.pop();
+	cout << "Print Top: " << stack.top() << endl;
+	cout << "Print Size: " << stack.size() << endl;
+	stack.pop();
+	if (stack.empty() == 1) cout << "stack is NULL" << endl;
+
+	cout << "[Stack End]" << endl << endl;
 }
 //큐: 뒤에서 추가하고 앞에서 꺼냄.
 //메세지큐: 이벤트가 발생한 순서대로 저장하는 공간.
 //입력된 순서대로 명령어 처리하기
 void QueueMain()
 {
+	cout << "[Queue Start]" << endl;
+	queue<int> queue;
+	queue.push(10);
+	cout << "queue Front: " << queue.front() << endl;
+	cout << "queue Size : " << queue.size() << endl;
+	queue.push(20);
+	cout << "queue Front: " << queue.front() << endl;
+	cout << "queue Size : " << queue.size() << endl;
+	queue.push(30);
+	cout << "queue Front: " << queue.front() << endl;
+	cout << "queue Size : " << queue.size() << endl;
+	queue.push(40);
+	cout << "queue Front: " << queue.front() << endl;
+	cout << "queue Size : " << queue.size() << endl << endl;
 
+	queue.pop();
+	cout << "queue Front: " << queue.front() << endl;
+	cout << "queue Size : " << queue.size() << endl;
+	queue.pop();
+	cout << "queue Front: " << queue.front() << endl;
+	cout << "queue Size : " << queue.size() << endl;
+	queue.pop();
+	cout << "queue Front: " << queue.front() << endl;
+	cout << "queue Size : " << queue.size() << endl;
+	queue.pop();
+	if(queue.empty() == 1) cout << "queue is NULL"<< endl;
+
+
+	cout << "[Queue End]" << endl << endl;
 }
 //우선순위큐: 우선순위가 높은 원소가 먼저나감(힙)
 //무작위로 데이터를 넣었을때 어떤 순서대로 데이터가 나오는가? 큰값부터 나온다.
 void PriorytyQueueMain()
 {
-
+	priority_queue<int> priQueue;
+	priQueue.push(40);
+	priQueue.push(20);
+	priQueue.push(10);
+	priQueue.push(50);
+	priQueue.push(70);
+	priQueue.push(30);
+	priQueue.push(90);
+	cout << "priQueue Front: " << priQueue.top() << endl;
+	cout << "priQueue Size : " << priQueue.size() << endl;
+	priQueue.pop();
+	cout << "priQueue Front: " << priQueue.top() << endl;
+	cout << "priQueue Size : " << priQueue.size() << endl;
+	priQueue.pop();
+	cout << "priQueue Front: " << priQueue.top() << endl;
+	cout << "priQueue Size : " << priQueue.size() << endl;
+	priQueue.pop();
+	cout << "priQueue Front: " << priQueue.top() << endl;
+	cout << "priQueue Size : " << priQueue.size() << endl;
+	priQueue.pop();
+	cout << "priQueue Front: " << priQueue.top() << endl;
+	cout << "priQueue Size : " << priQueue.size() << endl;
+	priQueue.pop();
 }
 //맵: 사전식으로 데이터를 찾을수있다.
 //해당영어단어를 넣으면 한국어 결과가 나온다.
@@ -126,11 +295,11 @@ void HashMapMain()
 void main()
 {
 	VectorMain();
-	//ListMain();
-	//DequeMain();
-	//StackMain();
-	//QueueMain();
-	//PriorytyQueueMain();
-	//MapMain();
-	//SetMain();
+	ListMain();
+	DequeMain();
+	StackMain();
+	QueueMain();
+	PriorytyQueueMain();
+	MapMain();
+	SetMain();
 }

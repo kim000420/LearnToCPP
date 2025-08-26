@@ -27,7 +27,16 @@ STL
 
 노드
 
+순차 접근
+랜덤 접근
+
 트리
+
+그리디 알고리즘
+
+API
+인터페이스
+
 
 [C++]
 
@@ -35,11 +44,31 @@ STL
 const: 상수 변수 선언시 사용
 Struct: 구조체
 
+STL
+container
+iterator
+algorithm
+functor
+
+pair
+vector
+stack
+queue
+deque
+map
+set
+algorithm
+
+operator[]
+at()
 
 
 
 [영어]
 
 Verification: 검증 V&V로도 쓰임
-
+assign: 할당하다
+iterator: 반복자
+overload
+override
 

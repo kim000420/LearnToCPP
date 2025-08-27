@@ -55,42 +55,31 @@ void VectorMain()
 //3.연결리스트의 종류: 단일, 환형, 이중 stl의 리스트는 어디에 해당되는가?
 void ListMain()
 {
-	cout << "[ListMain Start]" << endl;
-
-	list<int> list(5);
-	list.push_back(20);
-	cout << "Print PushBack 20" << endl;
-	for (int i : list)
-	{
-		cout << "[" << i << "]";
-	}
+	cout << "[VectorMain Start]" << endl;
+	list<int> container(1);//컨테이너생성시 크기를 지정가능하다.
+	container[0] = 10;
+	cout << "Print:";
+	for (int i = 0; i < container.size(); i++)
+		cout << "[" << i << "]" << container[i] << ",";
 	cout << endl;
-	
-	list.push_front(10);
-	cout << "Print PushFront 10" << endl;
-	for (int i : list)
-	{
-		cout << "[" << i << "]";
-	}
+	container.resize(3); //배열의 크기를 지정한다.
+	cout << "Print:";
+	for (int i = 0; i < container.size(); i++)
+		cout << "[" << i << "]" << container[i] << ",";
 	cout << endl;
-
-	list.sort();
-	cout << "Print Sort" << endl;
-	for (int i : list)
-	{
-		cout << "[" << i << "]";
-	}
+	//1.추가 2.삽입 3.삭제 4.모두삭제
+	list<int>::iterator it;
+	cout << "PrintPtr:";
+	for (it = container.begin(); it != container.end(); it++)
+		cout << "[" << &*it << "]" << *it << ",";
+	cout << endl;
+	container.clear(); //모두삭제
+	cout << "Clear:";
+	for (it = container.begin(); it != container.end(); it++)
+		cout << "[" << &*it << "]" << *it << ",";
 	cout << endl;
 
-	list.reverse();
-	cout << "Print reverse" << endl;
-	for (int i : list)
-	{
-		cout << "[" << i << "]";
-	}
-	cout << endl;
-
-	cout << "[ListMain End]" << endl << endl;
+	cout << "[VectorMain End]" << endl << endl;
 }
 //데크: 앞뒤로 자료를 추가/삭제가능, 랜덤접근가능.
 void DequeMain()

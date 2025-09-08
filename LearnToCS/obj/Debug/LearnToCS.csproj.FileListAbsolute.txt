@@ -1,0 +1,7 @@
+C:\Users\Administrator\Documents\GitHub\HSK\LearnToCPP\LearnToCS\bin\Debug\LearnToCS.exe.config
+C:\Users\Administrator\Documents\GitHub\HSK\LearnToCPP\LearnToCS\bin\Debug\LearnToCS.exe
+C:\Users\Administrator\Documents\GitHub\HSK\LearnToCPP\LearnToCS\bin\Debug\LearnToCS.pdb
+C:\Users\Administrator\Documents\GitHub\HSK\LearnToCPP\LearnToCS\obj\Debug\LearnToCS.csproj.AssemblyReference.cache
+C:\Users\Administrator\Documents\GitHub\HSK\LearnToCPP\LearnToCS\obj\Debug\LearnToCS.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Documents\GitHub\HSK\LearnToCPP\LearnToCS\obj\Debug\LearnToCS.exe
+C:\Users\Administrator\Documents\GitHub\HSK\LearnToCPP\LearnToCS\obj\Debug\LearnToCS.pdb

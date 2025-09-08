@@ -57,7 +57,7 @@ void ListMain()
 {
 	cout << "[VectorMain Start]" << endl;
 	list<int> container(1);//컨테이너생성시 크기를 지정가능하다.
-	container[0] = 10;
+	// container[0] = 10;
 	cout << "Print:";
 	for (int i = 0; i < container.size(); i++)
 		cout << "[" << i << "]" << container[i] << ",";
@@ -67,7 +67,11 @@ void ListMain()
 	for (int i = 0; i < container.size(); i++)
 		cout << "[" << i << "]" << container[i] << ",";
 	cout << endl;
-	//1.추가 2.삽입 3.삭제 4.모두삭제
+	// 1.추가
+	container.insert(container.back(),10);
+	// 2.삽입 
+	// 3.삭제 
+	// 4.모두삭제
 	list<int>::iterator it;
 	cout << "PrintPtr:";
 	for (it = container.begin(); it != container.end(); it++)

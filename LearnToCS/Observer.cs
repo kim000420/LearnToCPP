@@ -28,23 +28,28 @@ namespace LearnToObserver
 
     public class unitCollection
     {
-
+        
     }
 
     public class Commander : Unit
     {
+        public void SetUnit()
+        {
+            Marin marin = new Marin();
+            List<Unit> unitCollections = new List<Unit>();
+        }
         // 유닛 리스트에 자동 저장
-        List<Unit> unitCollections[] = new List<Unit>();
+        
 
         // 유닛 선택후 선택한 유닛 리스트에 저장
-        public void selectUnit()
+        public void SelectUnit()
         {
 
         }
 
         // 유닛 선택후 이미선택되었는지 확인
         // 이미 선택되었다면 선택한 유닛 리스트에서 제거
-        public void deselectUnit()
+        public void DeselectUnit()
         {
 
         }

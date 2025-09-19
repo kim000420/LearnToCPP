@@ -16,12 +16,12 @@ namespace LearnToObserver
      */
     class Program
     { 
-        static void Main()
-        {
+        //static void Main()
+        //{
 
-            //Commander.Move(10,10) //10 10 만큼 이동
-            //unitCollection.Move(x,y) //선택한녀석 단체이동
-        }
+        //    //Commander.Move(10,10) //10 10 만큼 이동
+        //    //unitCollection.Move(x,y) //선택한녀석 단체이동
+        //}
 
         
     }

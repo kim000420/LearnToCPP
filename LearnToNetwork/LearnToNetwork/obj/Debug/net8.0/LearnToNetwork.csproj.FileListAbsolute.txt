@@ -1,0 +1,5 @@
+C:\Users\Administrator\Documents\GitHub\HSK\LearnToCPP\LearnToNetwork\LearnToNetwork\obj\Debug\net8.0\LearnToNetwork.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Administrator\Documents\GitHub\HSK\LearnToCPP\LearnToNetwork\LearnToNetwork\obj\Debug\net8.0\LearnToNetwork.AssemblyInfoInputs.cache
+C:\Users\Administrator\Documents\GitHub\HSK\LearnToCPP\LearnToNetwork\LearnToNetwork\obj\Debug\net8.0\LearnToNetwork.AssemblyInfo.cs
+C:\Users\Administrator\Documents\GitHub\HSK\LearnToCPP\LearnToNetwork\LearnToNetwork\obj\Debug\net8.0\LearnToNetwork.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Documents\GitHub\HSK\LearnToCPP\LearnToNetwork\LearnToNetwork\obj\Debug\net8.0\LearnToNetwork.sourcelink.json

@@ -1,0 +1,14 @@
+C:\Users\Administrator\Documents\network\Client\UDP_P2P\bin\Debug\net8.0\UDP_P2P.exe
+C:\Users\Administrator\Documents\network\Client\UDP_P2P\bin\Debug\net8.0\UDP_P2P.deps.json
+C:\Users\Administrator\Documents\network\Client\UDP_P2P\bin\Debug\net8.0\UDP_P2P.runtimeconfig.json
+C:\Users\Administrator\Documents\network\Client\UDP_P2P\bin\Debug\net8.0\UDP_P2P.dll
+C:\Users\Administrator\Documents\network\Client\UDP_P2P\bin\Debug\net8.0\UDP_P2P.pdb
+C:\Users\Administrator\Documents\network\Client\UDP_P2P\obj\Debug\net8.0\UDP_P2P.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Administrator\Documents\network\Client\UDP_P2P\obj\Debug\net8.0\UDP_P2P.AssemblyInfoInputs.cache
+C:\Users\Administrator\Documents\network\Client\UDP_P2P\obj\Debug\net8.0\UDP_P2P.AssemblyInfo.cs
+C:\Users\Administrator\Documents\network\Client\UDP_P2P\obj\Debug\net8.0\UDP_P2P.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Documents\network\Client\UDP_P2P\obj\Debug\net8.0\UDP_P2P.dll
+C:\Users\Administrator\Documents\network\Client\UDP_P2P\obj\Debug\net8.0\refint\UDP_P2P.dll
+C:\Users\Administrator\Documents\network\Client\UDP_P2P\obj\Debug\net8.0\UDP_P2P.pdb
+C:\Users\Administrator\Documents\network\Client\UDP_P2P\obj\Debug\net8.0\UDP_P2P.genruntimeconfig.cache
+C:\Users\Administrator\Documents\network\Client\UDP_P2P\obj\Debug\net8.0\ref\UDP_P2P.dll

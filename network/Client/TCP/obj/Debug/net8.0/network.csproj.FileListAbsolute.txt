@@ -1,0 +1,14 @@
+C:\Users\Administrator\Documents\network\bin\Debug\net8.0\network.exe
+C:\Users\Administrator\Documents\network\bin\Debug\net8.0\network.deps.json
+C:\Users\Administrator\Documents\network\bin\Debug\net8.0\network.runtimeconfig.json
+C:\Users\Administrator\Documents\network\bin\Debug\net8.0\network.dll
+C:\Users\Administrator\Documents\network\bin\Debug\net8.0\network.pdb
+C:\Users\Administrator\Documents\network\obj\Debug\net8.0\network.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Administrator\Documents\network\obj\Debug\net8.0\network.AssemblyInfoInputs.cache
+C:\Users\Administrator\Documents\network\obj\Debug\net8.0\network.AssemblyInfo.cs
+C:\Users\Administrator\Documents\network\obj\Debug\net8.0\network.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Documents\network\obj\Debug\net8.0\network.dll
+C:\Users\Administrator\Documents\network\obj\Debug\net8.0\refint\network.dll
+C:\Users\Administrator\Documents\network\obj\Debug\net8.0\network.pdb
+C:\Users\Administrator\Documents\network\obj\Debug\net8.0\network.genruntimeconfig.cache
+C:\Users\Administrator\Documents\network\obj\Debug\net8.0\ref\network.dll

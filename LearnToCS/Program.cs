@@ -70,10 +70,10 @@ namespace ThreadTaskAsync
             Console.WriteLine("TaskDelayTime:{0}",  DateTime.Now.Millisecond - nTime);
         }
 
-        static void Main(string[] args)
-        {
-            ThreadTestMain();
-            //TaskTestMain();
-        }
-    }
+    //    static void Main(string[] args)
+    //    {
+    //        ThreadTestMain();
+    //        //TaskTestMain();
+    //    }
+    //}
 }

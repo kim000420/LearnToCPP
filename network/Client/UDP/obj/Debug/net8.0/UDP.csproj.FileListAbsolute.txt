@@ -1,0 +1,14 @@
+C:\Users\Administrator\Documents\network\Client\UDP\bin\Debug\net8.0\UDP.exe
+C:\Users\Administrator\Documents\network\Client\UDP\bin\Debug\net8.0\UDP.deps.json
+C:\Users\Administrator\Documents\network\Client\UDP\bin\Debug\net8.0\UDP.runtimeconfig.json
+C:\Users\Administrator\Documents\network\Client\UDP\bin\Debug\net8.0\UDP.dll
+C:\Users\Administrator\Documents\network\Client\UDP\bin\Debug\net8.0\UDP.pdb
+C:\Users\Administrator\Documents\network\Client\UDP\obj\Debug\net8.0\UDP.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Administrator\Documents\network\Client\UDP\obj\Debug\net8.0\UDP.AssemblyInfoInputs.cache
+C:\Users\Administrator\Documents\network\Client\UDP\obj\Debug\net8.0\UDP.AssemblyInfo.cs
+C:\Users\Administrator\Documents\network\Client\UDP\obj\Debug\net8.0\UDP.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Documents\network\Client\UDP\obj\Debug\net8.0\UDP.dll
+C:\Users\Administrator\Documents\network\Client\UDP\obj\Debug\net8.0\refint\UDP.dll
+C:\Users\Administrator\Documents\network\Client\UDP\obj\Debug\net8.0\UDP.pdb
+C:\Users\Administrator\Documents\network\Client\UDP\obj\Debug\net8.0\UDP.genruntimeconfig.cache
+C:\Users\Administrator\Documents\network\Client\UDP\obj\Debug\net8.0\ref\UDP.dll

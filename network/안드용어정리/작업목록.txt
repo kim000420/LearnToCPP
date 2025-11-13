@@ -1,0 +1,13 @@
+
+
+안드스튜디오 녹스와 연결
+C:\Users\Administrator\AppData\Local\Android\Sdk\platform-tools
+adb connect 127.0.0.1:62001
+connected to 127.0.0.1:62001
+
+jdk-17로 변경
+
+build.gradle 
+namespace 추가
+compileSdkVersion 33으로 변경
+targetSdkVersion 33으로 변경
